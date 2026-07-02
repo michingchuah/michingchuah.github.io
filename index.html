@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eli Chuah — Product & Solutions Leader, APAC</title>
-<meta name="description" content="Eli Chuah builds fintech, payments and HR-tech products across APAC — from $90M payment platforms to AI-powered sales workflows. Creator of @hustlebites.">
+<meta name="description" content="Eli Chuah builds fintech, payments and HR-tech products across APAC — from $90M payment platforms to AI-powered sales workflows. Creator of @hustlebites.co.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -150,6 +150,10 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.88);backdrop-f
 .proj{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
 .proj:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(18,38,58,.10)}
 .proj .ph{height:210px;border:none;border-bottom:2px dashed #C9C2B2;border-radius:0}
+.proj-img{width:100%;height:230px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#fff;display:block}
+.proj-visual{height:230px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,var(--blue-soft),var(--yellow-soft));display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:20px}
+.pv-step{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;box-shadow:0 2px 6px rgba(18,38,58,.07);white-space:nowrap}
+.pv-arrow{color:var(--blue);font-weight:700}
 .proj-body{padding:26px 28px 30px}
 .proj-tag{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px;display:inline-block;margin-bottom:14px}
 .tag-b{background:var(--blue-soft);color:var(--blue)}
@@ -166,10 +170,10 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.88);backdrop-f
 .hb-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
 .hb .btn-primary{background:var(--ink)}
 .hb .btn-primary:hover{box-shadow:0 8px 20px rgba(18,38,58,.3)}
-.hb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
-.hb-card{background:#fff;border:1px solid #F0DFAE;border-radius:var(--radius);overflow:hidden}
-.hb-card .ph{aspect-ratio:9/16;border:none;border-radius:0}
-@media(max-width:760px){.hb-grid{grid-template-columns:1fr;max-width:300px;margin-left:auto;margin-right:auto}.hb-head .btn{width:100%;justify-content:center}}
+.hb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;align-items:start}
+.hb-card{background:transparent;border:none;border-radius:var(--radius);overflow:visible}
+.hb-card .tiktok-embed{border-radius:var(--radius)}
+@media(max-width:760px){.hb-grid{grid-template-columns:1fr;max-width:360px;margin-left:auto;margin-right:auto}.hb-head .btn{width:100%;justify-content:center}}
 
 /* ---------- speaking ---------- */
 .speak-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px;align-items:center}
@@ -179,7 +183,11 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.88);backdrop-f
 .speak-year{font-family:var(--display);font-weight:700;color:var(--green);min-width:56px}
 .speak-list b{display:block;font-weight:600}
 .speak-list span{color:var(--muted);font-size:15px}
-.speak-photo .ph{aspect-ratio:4/3}
+.speak-photo{display:flex;flex-direction:column;gap:20px}
+.speak-photo figure{margin:0}
+.speak-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--radius);box-shadow:0 10px 26px rgba(18,38,58,.12)}
+.speak-photo figure:nth-child(2) img{object-position:50% 22%}
+.speak-photo figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;font-weight:500}
 @media(max-width:820px){.speak-grid{grid-template-columns:1fr}}
 
 /* ---------- toolkit ---------- */
@@ -238,11 +246,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
       <p>I'm Eli Chuah, a product and solutions leader with 7+ years across APAC fintech, payments and HR tech. I've taken products from zero to $90M platforms at Shopee, SeaMoney and Indeed — and now close enterprise deals as a global top-ranked Solutions Consultant at Remote, powered by AI workflows I build myself.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#projects">See my work</a>
-        <a class="btn btn-ghost" href="#hustlebites">Watch @hustlebites</a>
+        <a class="btn btn-ghost" href="#hustlebites">Watch @hustlebites.co</a>
       </div>
     </div>
     <div class="hero-photo">
-      <div class="ph"><span>📸 Your headshot here<br>(portrait, ~800×1000px)</span></div>
+      <img src="images/headshot.jpg" alt="Eli Chuah smiling" style="width:100%;height:100%;object-fit:cover;object-position:50% 32%;border-radius:var(--radius)">
     </div>
   </div>
 </header>
@@ -337,7 +345,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 
     <div class="proj-grid">
       <article class="proj reveal">
-        <div class="ph"><span>🖼️ Screenshot: PayNow billing portal</span></div>
+        <img class="proj-img" src="images/project-paynow.jpg" alt="Indeed PayNow billing dashboard and payment method screens (illustrative mockups)">
         <div class="proj-body">
           <span class="proj-tag tag-b">Payments · B2B</span>
           <h3>Indeed PayNow</h3>
@@ -347,7 +355,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
       </article>
 
       <article class="proj reveal">
-        <div class="ph"><span>🖼️ Screenshot: 1-minute KYC flow</span></div>
+        <img class="proj-img" src="images/project-maribank.jpg" alt="Maribank mobile onboarding and KYC flow screens (illustrative mockups)">
         <div class="proj-body">
           <span class="proj-tag tag-g">Fintech · Compliance</span>
           <h3>Maribank KYC & AML systems</h3>
@@ -357,7 +365,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
       </article>
 
       <article class="proj reveal">
-        <div class="ph"><span>🖼️ Screenshot: SEAMLESS case tool</span></div>
+        <img class="proj-img" src="images/project-seamless.jpg" alt="SEAMLESS compliance case management screening view (illustrative mockup)">
         <div class="proj-body">
           <span class="proj-tag tag-g">Internal tools</span>
           <h3>SEAMLESS case management</h3>
@@ -367,7 +375,12 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
       </article>
 
       <article class="proj reveal">
-        <div class="ph"><span>🖼️ Screenshot / demo: AI sales agents</span></div>
+        <div class="proj-visual" role="img" aria-label="Diagram of an AI sales agent pipeline: deal brief to AI agents to tailored collateral to follow-ups">
+          <span class="pv-step">📄 Deal brief</span><span class="pv-arrow">→</span>
+          <span class="pv-step">🤖 AI agents</span><span class="pv-arrow">→</span>
+          <span class="pv-step">✨ Tailored collateral</span><span class="pv-arrow">→</span>
+          <span class="pv-step">📬 Follow-ups</span>
+        </div>
         <div class="proj-body">
           <span class="proj-tag tag-y">AI · Pre-sales</span>
           <h3>AI agents for the sales cycle</h3>
@@ -376,6 +389,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
         </div>
       </article>
     </div>
+    <p style="margin-top:22px;font-size:13.5px;color:var(--muted)">Product screens shown are illustrative mockups — no real customer data.</p>
   </div>
 </section>
 
@@ -384,15 +398,15 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <div class="hb-head">
       <div>
         <span class="eyebrow y">On the side</span>
-        <h2>@hustlebites 🍋</h2>
+        <h2>@hustlebites.co 🍋</h2>
         <p class="lede">Bite-sized career tips for Southeast Asian professionals — negotiating offers, working with global teams, and thriving in tech. New videos every week on TikTok.</p>
       </div>
-      <a class="btn btn-primary" href="https://www.tiktok.com/@hustlebites" target="_blank" rel="noopener">Follow on TikTok →</a>
+      <a class="btn btn-primary" href="https://www.tiktok.com/@hustlebites.co" target="_blank" rel="noopener">Follow on TikTok →</a>
     </div>
     <div class="hb-grid">
-      <div class="hb-card reveal"><div class="ph"><span>🎬 TikTok embed #1</span></div></div>
-      <div class="hb-card reveal"><div class="ph"><span>🎬 TikTok embed #2</span></div></div>
-      <div class="hb-card reveal"><div class="ph"><span>🎬 TikTok embed #3</span></div></div>
+      <div class="hb-card reveal"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hustlebites.co/photo/7610444561428614421" data-video-id="7610444561428614421" style="max-width:100%;min-width:300px;margin:0 auto"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@hustlebites.co">@hustlebites.co</a></section></blockquote></div>
+      <div class="hb-card reveal"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hustlebites.co/photo/7624098495976328468" data-video-id="7624098495976328468" style="max-width:100%;min-width:300px;margin:0 auto"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@hustlebites.co">@hustlebites.co</a></section></blockquote></div>
+      <div class="hb-card reveal"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hustlebites.co/photo/7621926914323762453" data-video-id="7621926914323762453" style="max-width:100%;min-width:300px;margin:0 auto"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@hustlebites.co">@hustlebites.co</a></section></blockquote></div>
     </div>
   </div>
 </section>
@@ -408,7 +422,16 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
         <li><span class="speak-year">2022</span><div><b>Singapore Merchant & Risk Council Conference</b><span>Featured keynote — payments localisation strategy in APAC</span></div></li>
         <li><span class="speak-year">Ongoing</span><div><b>Mentoring & enablement</b><span>Indeed University panel judge · SC/AE coaching · demo certification programmes</span></div></li>
       </ul>
-      <div class="speak-photo"><div class="ph"><span>📸 A photo of you on stage<br>(landscape, ~1200×900px)</span></div></div>
+      <div class="speak-photo">
+        <figure>
+          <img src="images/speaking-nextrise.jpg" alt="Eli Chuah presenting a keynote on stage at NextRise in Seoul">
+          <figcaption>Keynote at NextRise, Seoul</figcaption>
+        </figure>
+        <figure>
+          <img src="images/speaking-echelon.jpg" alt="Eli Chuah speaking on a panel at Echelon Singapore">
+          <figcaption>Panel at Echelon, Singapore</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -442,7 +465,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <div class="contact-links">
       <a class="btn btn-primary" href="mailto:michingchuah@gmail.com">Email me</a>
       <a class="btn btn-ghost" href="https://linkedin.com/in/michingchuah" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn btn-ghost" href="https://www.tiktok.com/@hustlebites" target="_blank" rel="noopener">TikTok</a>
+      <a class="btn btn-ghost" href="https://www.tiktok.com/@hustlebites.co" target="_blank" rel="noopener">TikTok</a>
     </div>
   </div>
 </section>
@@ -468,5 +491,6 @@ navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
+<script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 </html>
